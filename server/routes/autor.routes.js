@@ -1,4 +1,5 @@
 const AutorController = require("../controllers/autor.controllers");
+
 const UserController = require('../controllers/user.cotrollers');
 
 const{authenticate } =require("../config/jwt.config");
@@ -13,4 +14,5 @@ const{authenticate } =require("../config/jwt.config");
         app.post("/api/register",UserController.register); //ruta del registro de usuario
 
         app.post("/api/login",UserController.login);
+
     }
